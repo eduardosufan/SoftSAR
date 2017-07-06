@@ -11,7 +11,7 @@ Created on 24 ene. 2017
 '''
 import unittest
 import sys
-sys.path.insert(0, '../Pkg/')
+sys.path.insert(0, '../src/')
 from ConfigurationManager import ConfigurationManager
 
 class Test_Parameter(unittest.TestCase):

@@ -11,7 +11,7 @@ Created on 18 may. 2017
 import unittest
 import sys
 import numpy as np
-sys.path.insert(0, '../Pkg/')
+sys.path.insert(0, '../src/')
 import SoftSAR as SoftSAR
 from ConfigurationManager import ConfigurationManager
 
@@ -34,6 +34,13 @@ class Test_SoftSAR(unittest.TestCase):
 
         # Object instance to read parameters from xml.
         self.param = ConfigurationManager(configuration_file_path)
+
+	measure_resolution = self.param.get_string_parameter("General/OutputData/measure_resolution_octave_module")
+        if measure_resolution != "yes":
+            print "To run this test you have to configure measurement of resolution with oct2py."
+            self.skipTest(MyTestCase)
+            sys.exit()
+        
         # Get number of cores to parallel processing.
         self.n_cores = self.param.get_int_parameter("General/OutputData/number_cores_used")
 

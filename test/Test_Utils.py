@@ -12,7 +12,7 @@ Created on 10 mar. 2017
 import unittest
 import numpy as np
 import sys
-sys.path.insert(0, '../Pkg/')
+sys.path.insert(0, '../src/')
 import Utils as Utils
 import os
 

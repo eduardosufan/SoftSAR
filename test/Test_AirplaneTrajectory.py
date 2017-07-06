@@ -12,11 +12,9 @@ Created on 13 feb. 2017
 import unittest
 import numpy as np
 import sys
-sys.path.insert(0, '../Pkg/')
+sys.path.insert(0, '../src/')
 from ConfigurationManager import ConfigurationManager
 from AirplaneTrajectory import AirplaneTrajectory
-#from Pkg.ConfigurationManager import ConfigurationManager
-#from Pkg.AirplaneTrajectory import AirplaneTrajectory
 
 class Test_AirplaneTrajectory(unittest.TestCase):
     """
