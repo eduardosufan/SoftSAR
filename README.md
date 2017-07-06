@@ -142,16 +142,16 @@ configuration "TDBP_parameters.xml". Parameters are:
   measure_resolution_octave_module: string - "yes" or "no" to measure image resolution with octave function. (DEFAULT: "no")  
   number_cores_used: int - number of cores to be used during image focussing. (DEFAULT: 2)  
 
-  SAR PARAMETERS
-  c: Light speed (DEFAULT: 300000000)  
-  f0: SAR central frequency (DEFAULT: 1300000000)  
-  PRF: SAR Pulse Repetition Frequency (DEFAULT: 250)  
-  fs: sar Sample frequency (DEFAULT: 50000000)  
-  beamwidth: SAR beamwidth (DEFAULT: 6.16)  
-  beamwidth_threshold: SAR beamwidth threshold used for limit antenna ilumination. (DEFAULT: 2)  
-  B: SAR bandwith (DEFAULT: 38000000)  
+    SAR PARAMETERS
+    c: Light speed (DEFAULT: 300000000)  
+    f0: SAR central frequency (DEFAULT: 1300000000)  
+    PRF: SAR Pulse Repetition Frequency (DEFAULT: 250)  
+    fs: sar Sample frequency (DEFAULT: 50000000)  
+    beamwidth: SAR beamwidth (DEFAULT: 6.16)  
+    beamwidth_threshold: SAR beamwidth threshold used for limit antenna ilumination. (DEFAULT: 2)  
+    B: SAR bandwith (DEFAULT: 38000000)  
 
-  AIRCRAFT PARAMETERS
+    AIRCRAFT PARAMETERS
     NOMINAL FLIGHT
     z: aircraft height (DEFAULT: 4900)  
     look_angle: aircraft look angle (DEFAULT: 30)  
@@ -171,10 +171,10 @@ configuration "TDBP_parameters.xml". Parameters are:
 
     az_bw_sim_enl: beamwidth SAR enlobe. If 1 it simulates the -3dB azimuth lobe. Based on the nominal trajectory (DEFAULT: 3)  
 
-  IMAGE SIMULATION
+    IMAGE SIMULATION
     Fast_time_pixel_margin_mono: Pixel margin in the fast time (DEFAULT: 10)  
 
-  IMAGE FOCUSING
+    IMAGE FOCUSING
     n_pixels_nominal_range_resolution: number of pixels representing nominal resolution in range. (DEFAULT: 5)  
     n_pixels_nominal_azimuth_resolution: number of pixels representing nominal resolution in azimuth. (DEFAULT: 3)  
     length_range_axis: length of range axis. Axis will be "length times" nominal range resolution. (DEFAULT: 3)  
