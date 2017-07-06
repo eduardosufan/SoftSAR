@@ -1,0 +1,53 @@
+<TDBP_parameters>
+  <General>
+    <OutputData>
+      <output_directory>.</output_directory>
+      <measure_resolution_octave_module>no</measure_resolution_octave_module>
+      <number_cores_used>4</number_cores_used>
+    </OutputData>
+  </General>
+
+  <Radar>
+    <c>300000000</c>
+    <f0       >1300000000</f0>
+    <PRF      >250</PRF>
+    <fs       >50000000</fs>
+    <beamwidth>6.16</beamwidth>
+    <beamwidth_threshold>2</beamwidth_threshold>
+    <B        >38000000</B>
+  </Radar>
+
+  <AirplaneTrajectory>
+    <NomAircraft>
+      <z           >4900</z>
+      <look_angle  >30</look_angle>
+      <squint_angle>0</squint_angle>
+      <v_nom       >103</v_nom>
+      <v_init      >40</v_init>
+    </NomAircraft>
+
+    <FlightParam>
+      <pitch>0</pitch>
+      <roll >0</roll>
+      <yaw  >5</yaw>
+    </FlightParam>
+
+    <FlightAttitude>
+      <pitch>0</pitch>
+      <roll >0</roll>
+      <yaw  >0</yaw>
+    </FlightAttitude>
+    <az_bw_sim_enl>3</az_bw_sim_enl>
+  </AirplaneTrajectory>
+
+  <ImageSimulation>
+    <Fast_time_pixel_margin_mono>10</Fast_time_pixel_margin_mono>
+  </ImageSimulation>
+
+  <ImageFocusing>
+    <n_pixels_nominal_range_resolution>5</n_pixels_nominal_range_resolution>
+    <n_pixels_nominal_azimuth_resolution>3</n_pixels_nominal_azimuth_resolution>
+    <length_range_axis>3</length_range_axis>
+    <length_azimuth_axis>9</length_azimuth_axis>
+  </ImageFocusing>   
+</TDBP_parameters>
