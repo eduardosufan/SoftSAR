@@ -1,4 +1,4 @@
-# **SoftSAR** Software for SAR image focusing.
+# **SoftSAR**: Software for SAR image focusing.
 - Author: Eduardo Sufan 
  - eduardosufan333@gmail.com
 - Colaborator: Matias Marenchino
@@ -137,10 +137,10 @@ command-line arguments to provide xml configuration file path and to choose the 
 To configure execution of SoftSAR processor, and parameters of SAR and trajectory you must edit the xml file
 configuration "TDBP_parameters.xml". Parameters are:  
 
-  GENERAL PARAMETERS
-  output_directory: string - relative path to save outputs.  
-  measure_resolution_octave_module: string - "yes" or "no" to measure image resolution with octave function. (DEFAULT: "no")  
-  number_cores_used: int - number of cores to be used during image focussing. (DEFAULT: 2)  
+    GENERAL PARAMETERS
+    output_directory: string - relative path to save outputs.  
+    measure_resolution_octave_module: string - "yes" or "no" to measure image resolution with octave function. (DEFAULT: "no")  
+    number_cores_used: int - number of cores to be used during image focussing. (DEFAULT: 2)  
 
     SAR PARAMETERS
     c: Light speed (DEFAULT: 300000000)  
