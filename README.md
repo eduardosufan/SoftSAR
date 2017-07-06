@@ -135,49 +135,48 @@ command-line arguments to provide xml configuration file path and to choose the 
    ---------------------
 
 To configure execution of SoftSAR processor, and parameters of SAR and trajectory you must edit the xml file
-configuration "TDBP_parameters.xml". Parameters are:
+configuration "TDBP_parameters.xml". Parameters are:  
 
   GENERAL PARAMETERS:
-  output_directory: string - relative path to save outputs.
-  measure_resolution_octave_module: string - "yes" or "no" to measure image resolution with octave function. (DEFAULT: "no")
-  number_cores_used: int - number of cores to be used during image focussing. (DEFAULT: 2)
+  output_directory: string - relative path to save outputs.  
+  measure_resolution_octave_module: string - "yes" or "no" to measure image resolution with octave function. (DEFAULT: "no")  
+  number_cores_used: int - number of cores to be used during image focussing. (DEFAULT: 2)  
 
-  SAR PARAMETERS:
-  c: Light speed (DEFAULT: 300000000)
-  f0: SAR central frequency (DEFAULT: 1300000000)
-  PRF: SAR Pulse Repetition Frequency (DEFAULT: 250)
-  fs: sar Sample frequency (DEFAULT: 50000000)
-  beamwidth: SAR beamwidth (DEFAULT: 6.16)
-  beamwidth_threshold: SAR beamwidth threshold used for limit antenna ilumination. (DEFAULT: 2)
-  B: SAR bandwith (DEFAULT: 38000000)
+  SAR PARAMETERS:  
+  c: Light speed (DEFAULT: 300000000)  
+  f0: SAR central frequency (DEFAULT: 1300000000)  
+  PRF: SAR Pulse Repetition Frequency (DEFAULT: 250)  
+  fs: sar Sample frequency (DEFAULT: 50000000)  
+  beamwidth: SAR beamwidth (DEFAULT: 6.16)  
+  beamwidth_threshold: SAR beamwidth threshold used for limit antenna ilumination. (DEFAULT: 2)  
+  B: SAR bandwith (DEFAULT: 38000000)  
 
-  AIRCRAFT PARAMETERS:
-    NOMINAL FLIGHT:
-    z: aircraft height (DEFAULT: 4900)
-    look_angle: aircraft look angle (DEFAULT: 30)
-    squint_angle: aircraft squint angle (DEFAULT: 0)
-    v_nom: nominal aircraft velocity over x axis (DEFAULT: 103)
-    v_init: initial aircraft velocity over x axis (DEFAULT: 40)
+  AIRCRAFT PARAMETERS:  
+    NOMINAL FLIGHT:  
+    z: aircraft height (DEFAULT: 4900)  
+    look_angle: aircraft look angle (DEFAULT: 30)  
+    squint_angle: aircraft squint angle (DEFAULT: 0)  
+    v_nom: nominal aircraft velocity over x axis (DEFAULT: 103)  
+    v_init: initial aircraft velocity over x axis (DEFAULT: 40)  
   
-    FLIGHT PARAMETERS
-    pitch: pitch angle to compute next position with an y axis rotation (DEFAULT: 0)
-    roll: roll angle to compute next position with an x axis rotation (DEFAULT: 0)
-    yaw: yaw angle to compute next position with an z axis rotation (DEFAULT: 5)
+    FLIGHT PARAMETERS  
+    pitch: pitch angle to compute next position with an y axis rotation (DEFAULT: 0)  
+    roll: roll angle to compute next position with an x axis rotation (DEFAULT: 0)  
+    yaw: yaw angle to compute next position with an z axis rotation (DEFAULT: 5)  
 
-    ATTITUDE PARAMETERS
-    pitch: pitch attitude angle (DEFAULT: 0)
-    roll: roll attitude angle (DEFAULT: 0)
-    yaw: yaw attitude angle (DEFAULT: 5)
+    ATTITUDE PARAMETERS  
+    pitch: pitch attitude angle (DEFAULT: 0)  
+    roll: roll attitude angle (DEFAULT: 0)  
+    yaw: yaw attitude angle (DEFAULT: 5)  
 
-    az_bw_sim_enl: beamwidth SAR enlobe. If 1 it simulates the -3dB azimuth lobe. Based on the nominal trajectory.
-                   (DEFAULT: 3)
+    az_bw_sim_enl: beamwidth SAR enlobe. If 1 it simulates the -3dB azimuth lobe. Based on the nominal trajectory (DEFAULT: 3)  
 
-  IMAGE SIMULATION:
-    Fast_time_pixel_margin_mono: Pixel margin in the fast time (DEFAULT: 10)
+  IMAGE SIMULATION:  
+    Fast_time_pixel_margin_mono: Pixel margin in the fast time (DEFAULT: 10)  
 
-  IMAGE FOCUSING:
-    n_pixels_nominal_range_resolution: number of pixels representing nominal resolution in range. (DEFAULT: 5)
-    n_pixels_nominal_azimuth_resolution: number of pixels representing nominal resolution in azimuth. (DEFAULT: 3)
-    length_range_axis: length of range axis. Axis will be "length times" nominal range resolution. (DEFAULT: 3)
-    length_azimuth_axis: length of azimuth axis. Axis will be "length times" nominal azimuth resolution. (DEFAULT: 9)
+  IMAGE FOCUSING:  
+    n_pixels_nominal_range_resolution: number of pixels representing nominal resolution in range. (DEFAULT: 5)  
+    n_pixels_nominal_azimuth_resolution: number of pixels representing nominal resolution in azimuth. (DEFAULT: 3)  
+    length_range_axis: length of range axis. Axis will be "length times" nominal range resolution. (DEFAULT: 3)  
+    length_azimuth_axis: length of azimuth axis. Axis will be "length times" nominal azimuth resolution. (DEFAULT: 9)  
 
