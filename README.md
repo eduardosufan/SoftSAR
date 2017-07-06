@@ -181,4 +181,3 @@ configuration "TDBP_parameters.xml". Parameters are:
     length_range_axis: length of range axis. Axis will be "length times" nominal range resolution. (DEFAULT: 3)
     length_azimuth_axis: length of azimuth axis. Axis will be "length times" nominal azimuth resolution. (DEFAULT: 9)
 
-
